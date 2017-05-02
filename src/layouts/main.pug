@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(property='og:site_name', content='Chernov Sergey')
+        meta(property='og:type', content='profile')
+        meta(property='og:title', content='Чернов Сергей, фронтенд-разработчик')
+        meta(property='og:description', content='Разработка сайтов, верстка, лендинг, фронтенд, front-end')
+        meta(property='og:url', content='http://chernov-sergey.ru/')
+        meta(property='og:image', content='/static/social.png')
+        meta(property='og:image:width', content='1043')
+        meta(property='og:image:height', content='539')
+
+        block title
+        link(rel="icon", type="image/svg+xml", href="favicon.svg")
+        link(rel="stylesheet" href="./css/main.css")
+
+    body
+        include particles/header
+        block content
+        include particles/footer

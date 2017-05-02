@@ -1,0 +1,8 @@
+/*---- Colors -----*/
+
+
+/*---- Break Points -----*/
+$large-device:  "screen and (max-width : 992px)";
+$tablet:        "screen and (max-width : 700px)";
+$smart-phone:   "screen and (max-width : 480px)";
+$small-device:  "screen and (max-width : 329px)";

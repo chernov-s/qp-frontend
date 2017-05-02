@@ -1,0 +1,40 @@
+{
+  "name": "qp-frontend",
+  "version": "1.0.0",
+  "description": "Project for the company qpvl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosed/qp-frontend.git"
+  },
+  "author": "Sosed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sosed/qp-frontend/issues"
+  },
+  "homepage": "https://github.com/sosed/qp-frontend#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^9.1.0",
+    "precss": "^1.4.0",
+    "rimraf": "^2.6.1",
+    "run-sequence": "^1.2.2"
+  }
+}
