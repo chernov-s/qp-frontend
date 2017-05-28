@@ -1,5 +1,12 @@
-@import "base/normalize.css";
 @import "base/variables.css";
 @import "base/global.css";
 
-@import "particles/header.css";
+@import "components/form.css";
+
+@import "particles/header/header.css";
+@import "particles/header/top-bar.css";
+@import "particles/header/cart.css";
+@import "particles/header/bookmark.css";
+@import "particles/header/navbar.css";
+
+

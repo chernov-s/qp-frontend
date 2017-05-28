@@ -1,0 +1,15 @@
+.cart {
+
+
+  &-number {
+    font-size: 12px;
+    height: 16px;
+    padding: 0 8px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6666;
+    border-radius: 16px;
+  }
+
+}

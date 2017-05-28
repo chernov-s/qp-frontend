@@ -1,5 +1,14 @@
 /*---- Colors -----*/
 
+$green-logo: #58C56F;
+$green-logo2: #65ab44;
+$green-logo3: #62a748;
+$black-0: #333;
+$black-1: #585858;
+
+$size-sm: 14px;
+$size-normal: 16px;
+
 
 /*---- Break Points -----*/
 $large-device:  "screen and (max-width : 992px)";

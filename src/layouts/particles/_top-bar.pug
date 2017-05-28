@@ -1,0 +1,41 @@
+-
+    topList = [
+        {
+            label: 'Доставка',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Оплата',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'О компании',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Контакты',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Отзывы',
+            url: 'javascript:void(0)'
+        }
+    ]
+
+mixin login
+    ul.nav.navbar-nav.navbar-right
+        li
+            a(href="#") Вход
+        li
+            a(href="#") Регистация
+
+mixin renderTopItem(item)
+    li
+        a(href= item.url)= item.label
+
+mixin renderTopBar
+    .b-top-bar
+        ul.b-top-bar__list
+            for item in topList
+                +renderTopItem(item)
+        ul.b-login

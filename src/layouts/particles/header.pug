@@ -1,1 +1,52 @@
-.header
+include _navbar
+
+.b-header(role="banner")
+
+    .b-header__middle
+        .container
+            .row
+                .col-md-5.b-header__left
+                    .b-header__contact
+                        div
+                            span.clock.lnr.lnr-clock
+                            span.clock-text с 10:00 до 19:00
+                        div
+                            span.phone.lnr.lnr-phone-handset
+                            span.phone-text 8 (800) 123-12-12
+
+                    .b-header__search
+                        form.form-inline
+                            .input-group
+                                span.input-group-addon
+                                    button.btn.btn-search
+                                        span.lnr.lnr-magnifier
+                                input.form-control.input-lg.b-header__search-input(type="text", required="required", placeholder="Поиск по товарам")
+
+                .col-md-2
+                    .b-header__logo
+                        a.b-header__logo-link(href="/")
+                            img(src="img/logo-qp.gif")
+                        span.b-header__logo-slogan Интернет-супермаркет
+
+                .col-md-5
+                    .b-header__right
+                        .action
+                            a(href="#")
+                                span Вход
+                            span &nbsp;/&nbsp;
+                            a(href="#")
+                                span Регистрация
+                        .bookmark.action
+                            a(href="#")
+                                span.icon.lnr.lnr-heart
+                                div
+                                    span.bookmark-text Избранное
+                        .cart.action
+                            a(href="#")
+                                span.icon.lnr.lnr-cart
+                                div
+                                    span.cart-number 0
+
+    .b-header__bottom
+        .container
+            +renderNavbar

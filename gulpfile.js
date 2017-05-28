@@ -44,6 +44,7 @@ var onError = function (err) {
  ========================================================================== */
 var paths = {
     css: './src/css/main.css',
+    cssAll: './src/css/**/*.css',
     pug: './src/*.pug',
     pugAll: './src/**/*.pug',
     js: 'src/js/**/*.js',
@@ -73,7 +74,7 @@ gulp.task('watch', ['build'], function () {
     watch(paths.pugAll, function () {
         seq('html');
     });
-    watch(paths.css, function () {
+    watch(paths.cssAll, function () {
         seq('css');
     });
     watch(paths.js, function () {
@@ -155,7 +156,7 @@ gulp.task('img', function () {
             interlaced: true,
             multipass: true
         }))
-        .pipe(gulp.dest('./dest'))
+        .pipe(gulp.dest('./dest/img'))
         .pipe(browserSync.reload({stream: true}));
 });
 

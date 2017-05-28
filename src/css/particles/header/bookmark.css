@@ -1,0 +1,7 @@
+.bookmark {
+  &-text {
+    font-size: 14px;
+    color: $black-0;
+    padding-left: 5px;
+  }
+}

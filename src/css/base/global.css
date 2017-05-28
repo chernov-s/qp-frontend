@@ -1,4 +1,13 @@
 body {
-  background-color: white;
-  font-size: 100%;
+  background-color: #eff0f0;
+  font-size: $size-normal;
+}
+a {
+  transition: all 400ms linear 0ms;
+  &, &:hover, &:visited, &:link, &:focus {
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0;
+  }
+
 }

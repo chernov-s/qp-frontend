@@ -1,0 +1,38 @@
+-
+    navList = [
+        {
+            label: 'Каталог',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Акции',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'О компании',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Доставка и оплата',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Отзывы',
+            url: 'javascript:void(0)'
+        },
+        {
+            label: 'Контакты',
+            url: 'javascript:void(0)'
+        }
+    ]
+
+
+mixin renderTopItem(item)
+    li
+        a(href= item.url)= item.label
+
+mixin renderNavbar
+    .b-navbar
+        ul.b-navbar__list
+            for item in navList
+                +renderTopItem(item)

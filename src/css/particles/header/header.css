@@ -1,0 +1,132 @@
+.b-header {
+  &__middle, &__right, &__search {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-right: 20px;
+    flex-basis: 45%;
+    & > div {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+    .clock-text {
+      font-size: 14px;
+    }
+    .lnr {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__middle {
+    background-color: white;
+  }
+
+  &__logo {
+    text-align: center;
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    a {
+
+    }
+    img {
+      height: 60px;
+    }
+    &-link {
+      color: $green-logo;
+      font-size: 2.5rem;
+      line-height: 1em;
+      text-align: center;
+      width: 100%;
+      &:hover, &:focus {
+        color: $green-logo;
+      }
+    }
+    &-slogan {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  &__search {
+    flex-basis: 55%;
+    form {
+      width: 100%;
+    }
+    .input-group {
+      width: 100%;
+    }
+    &-input {
+      border-radius: 0;
+      border: none;
+      color: $black-0;
+      font-size: 14px;
+      &::placeholder {
+        color: $black-0;
+
+      }
+      &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .input-group-addon {
+      padding: 0;
+      border: none;
+      width: 60px;
+      background-color: transparent;
+    }
+    .btn {
+      background-color: transparent;
+      color: $black-0;
+      width: 100%;
+      height: 46px;
+      border-radius: 0;
+      font-size: 34px;
+      padding: 0;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-around;
+    .action {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      a {
+        display: flex;
+        align-items: center;
+        height: 46px;
+        color: $black-0;
+        &:hover {
+          color: $green-logo;
+          .logo {
+            color: $green-logo;
+          }
+
+        }
+      }
+      .icon {
+        font-size: 34px;
+        color: $black-0;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #3e5763;
+  }
+}
