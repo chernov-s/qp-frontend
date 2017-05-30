@@ -2,7 +2,6 @@
   &__list {
     list-style: none;
     display: flex;
-    justify-content: center;
     padding: 0;
     margin: 0;
     li {
@@ -15,6 +14,12 @@
           background-color: $green-logo;
         }
       }
+    }
+    &-catalog {
+      padding: 0;
+      margin: 0 !important;
+      width: $catalog-menu-width;
+      background-color: $green-logo;
     }
   }
 }

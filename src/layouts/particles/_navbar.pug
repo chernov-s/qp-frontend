@@ -1,10 +1,6 @@
 -
     navList = [
         {
-            label: 'Каталог',
-            url: 'javascript:void(0)'
-        },
-        {
             label: 'Акции',
             url: 'javascript:void(0)'
         },
@@ -34,5 +30,7 @@ mixin renderTopItem(item)
 mixin renderNavbar
     .b-navbar
         ul.b-navbar__list
+            li.b-navbar__list-catalog
+                a(href= '#') Каталог
             for item in navList
                 +renderTopItem(item)

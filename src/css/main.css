@@ -1,5 +1,6 @@
 @import "base/variables.css";
 @import "base/global.css";
+@import "base/layout.css";
 
 @import "components/form.css";
 
@@ -8,5 +9,6 @@
 @import "particles/header/cart.css";
 @import "particles/header/bookmark.css";
 @import "particles/header/navbar.css";
+@import "particles/catalog.css";
 
 

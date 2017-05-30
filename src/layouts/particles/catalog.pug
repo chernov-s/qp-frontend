@@ -1,0 +1,33 @@
+-
+    catalogList = [
+        {
+            name: 'Еда',
+            count: '2'
+        },
+        {
+            name: 'Напитки',
+            count: '5'
+        },
+        {
+            name: 'Косметика',
+            count: '132'
+        },
+        {
+            name: 'Детское питание',
+            count: '43'
+        },
+        {
+            name: 'Еда',
+            count: '5'
+        }
+    ]
+
+mixin renderCatalogItem(item)
+    li.catalog__list-item
+        a(href='#')= item.name
+            span= item.count
+
+.catalog
+    ul.catalog__list
+        for item in catalogList
+            +renderCatalogItem(item)

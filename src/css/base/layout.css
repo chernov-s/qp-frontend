@@ -1,0 +1,9 @@
+aside {
+  width: $catalog-menu-width;
+  float: left;
+}
+
+main {
+  margin-left: calc($catalog-menu-width + 20);
+  position: relative;
+}

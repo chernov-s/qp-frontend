@@ -1,8 +1,8 @@
 /*---- Colors -----*/
 
-$green-logo: #58C56F;
+$green-logo: #00C57B;
 $green-logo2: #65ab44;
-$green-logo3: #62a748;
+$green-logo3: #58C56F;
 $black-0: #333;
 $black-1: #585858;
 
@@ -15,3 +15,5 @@ $large-device:  "screen and (max-width : 992px)";
 $tablet:        "screen and (max-width : 700px)";
 $smart-phone:   "screen and (max-width : 480px)";
 $small-device:  "screen and (max-width : 329px)";
+
+$catalog-menu-width:  260px;

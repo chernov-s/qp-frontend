@@ -1,0 +1,32 @@
+.catalog {
+  background-color: white;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &-item {
+      a {
+        display: block;
+        padding: 10px 15px;
+        color: #717f86;
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: all 200ms linear;
+        text-transform: uppercase;
+        position: relative;
+        span {
+          margin-left: 8px;
+          color: #bfbfbf;
+          padding: 1px 7px;
+          border-radius: 2px;
+          font-size: 11px;
+          transition: all 200ms linear;
+        }
+      }
+    }
+    li + li {
+      border-top: 1px solid #eee;
+    }
+  }
+}
