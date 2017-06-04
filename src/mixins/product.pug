@@ -1,5 +1,16 @@
-mixin product()
-    .col-sm-3
+mixin product(item)
+    .col-sm-12.col-md-6.col-lg-4
         .product
-            a(href='#')
-                img(src='img/null.svg')
+            a.thumbnail(href= '#')
+                img(src= 'img/null.svg')
+            a.product-name(href= '#')= item.name
+            .product-price
+                span= item.price + ' ₽'
+            .product-action
+                a.product-to-bookmark(href= '#', title='Добавить в избранное', class= item.bookmark ? 'active' : '')
+                    span.icon.lnr.lnr-heart
+                    span.counter= item.likes > 0 ? item.likes : ''
+                a.product-to-cart(href= '#', title='Добавить в корзину')
+                    span Купить
+
+

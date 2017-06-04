@@ -1,12 +1,12 @@
 extend layouts/main
-include mixins/product
 
 block title
     title Каталог
-
+    
 block content
     h1 Каталог
     .row
-        - var n = 0;
-        while n < 9
-            +product()
+        include mixins/src/_productList
+        include mixins/product
+        for item in productList
+            +product(item)

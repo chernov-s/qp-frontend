@@ -3,6 +3,7 @@
 @import "base/layout.css";
 
 @import "components/form.css";
+@import "components/product.css";
 
 @import "particles/header/header.css";
 @import "particles/header/top-bar.css";

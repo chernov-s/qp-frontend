@@ -44,13 +44,13 @@
       height: 60px;
     }
     &-link {
-      color: $green-logo;
+      color: $color-brand;
       font-size: 2.5rem;
       line-height: 1em;
       text-align: center;
       width: 100%;
       &:hover, &:focus {
-        color: $green-logo;
+        color: $color-brand;
       }
     }
     &-slogan {
@@ -112,9 +112,9 @@
         height: 46px;
         color: $black-0;
         &:hover {
-          color: $green-logo;
+          color: $color-brand;
           .logo {
-            color: $green-logo;
+            color: $color-brand;
           }
 
         }

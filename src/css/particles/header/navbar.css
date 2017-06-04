@@ -11,7 +11,7 @@
         display: block;
         color: white;
         &:hover {
-          background-color: $green-logo;
+          background-color: $color-brand;
         }
       }
     }
@@ -19,7 +19,7 @@
       padding: 0;
       margin: 0 !important;
       width: $catalog-menu-width;
-      background-color: $green-logo;
+      background-color: $color-brand;
     }
   }
 }
